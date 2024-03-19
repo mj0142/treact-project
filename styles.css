@@ -36,6 +36,61 @@ li, ul, a {
     transition: all ease 300ms;
 }
 
+.row {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.purple {
+    color: #6415ff;
+}
+
+.container {
+    padding: 96px 0px;
+}
+
+button {
+    transition: all ease .3s;
+    cursor: pointer;
+}
+
+.btn {
+    padding: 12px 32px;
+    border-radius: 25px;
+    color: white;
+    background-color: #6415ff;
+    font-size: 14px;
+    color: white;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 48px;
+    color: #243363
+}
+
+.link__hover-effect {
+    position: relative;
+}
+
+.link__hover-effect:after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    height: 3px;
+    width: 0;
+    right: 0;
+    background-color: #6415ff;
+    transition: all 300ms ease;
+}
+
+.link__hover-effect:hover:after {
+    left: 0;
+    width: 100%;
+}
+
 
 /* NAVIGATION */
 
@@ -97,3 +152,113 @@ ul {
     color: #6415ff;
 }
 
+/* HEADER */
+
+.blob1 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    opacity: 0.05;
+    transform: translateX(-125px);
+    height: 256px;
+    width: 256px;
+}
+
+.column {
+    display: flex;
+}
+
+.header__content {
+    width: 40%;
+    
+}
+
+.header__description {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 32px 0px;
+}
+
+.header__img--wrapper {
+    width: 60%;
+    margin-left: 24px;
+}
+
+.figure__img {
+    width: 100%;
+}
+
+.header__email {
+    position: relative;
+}
+
+.email__btn {
+    position: absolute;
+    right: 0;
+    margin: 8px 8px 8px 0;
+    padding: 14px 0;
+    width: 160px;
+    border-radius: 9999px;
+    background-color: #6415ff;
+    text-align: center;
+    font-size: 16px;
+    color: #f7fafc;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.header__email--input {
+    padding: 22px 0;
+    padding-left: 32px;
+    width: 100%;
+    border-radius: 100px;
+    border: 2px solid #e5e7eb;
+    font-size: 16px;
+    font-weight: 500;
+    border-color: rgba(40, 66, 150, 0.1);
+    transition: all 300ms ease; 
+    color: rgba(45, 68, 144, 0.6);
+}
+
+input::placeholder {
+    color: rgba(40, 66, 150, 0.3);}
+
+input, input::placeholder {
+    font-size: 16px;
+}
+
+input:focus {
+    outline: 1px solid #6415ff;
+	outline-offset: -2px;
+}
+
+header h3 {
+    font-weight: 700;
+    color: #A0AEC0;
+    margin-top: 80px;
+    font-size: 12px;
+}
+
+.header__customers--list {
+    width: 70%;
+    opacity: 0.5;
+    margin: 16px 0px;
+}
+
+.header__img {
+display: flex;
+}
+
+@media (max-width: 640px) {
+    .title {
+        text-align: center;
+    }
+    .email__btn {
+        position: static;
+        width: 100%;
+        max-width: 410px;
+        padding: 20px;
+        display: block;
+    }
+
+ }
